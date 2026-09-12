@@ -1,0 +1,164 @@
+/* === Barra Lateral === */
+#Desktop_LeftSidebar_Id {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: var(--sidebar-width, 311px) !important;
+    min-width: var(--sidebar-width, 311px) !important;
+    max-width: var(--sidebar-width, 311px) !important;
+    height: 100vh !important;
+    background: rgba(var(--sidebar-color, 15, 15, 35), var(--sidebar-opacity, 0.35)) !important;
+    backdrop-filter: blur(var(--sidebar-blur, 35px)) saturate(var(--sidebar-saturate, 150%)) !important;
+    -webkit-backdrop-filter: blur(var(--sidebar-blur, 35px)) saturate(var(--sidebar-saturate, 150%)) !important;
+    z-index: 9999 !important;
+    padding-top: 60px !important;
+    /* Animación optimizada con transform */
+    transform: translateX(calc(var(--sidebar-width, 311px) * -1 + 11px)) !important;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+    will-change: transform !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+}
+
+#Desktop_LeftSidebar_Id:hover {
+    transform: translateX(0) !important;
+}
+
+body.panel-open #Desktop_LeftSidebar_Id {
+    transform: translateX(0) !important;
+}
+
+/* === Panel de configuración === */
+#barra-lateral-panel {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 320px;
+  background: rgba(15, 15, 25, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  z-index: 10000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.panel-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.panel-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.panel-control label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.panel-control input[type="range"] {
+  width: 100%;
+  accent-color: #1ed760;
+}
+
+.panel-control input[type="color"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.panel-save {
+  background: #1ed760;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.panel-save:hover {
+  background: #1fdf64;
+}
+
+/* === Botones de Presets === */
+.panel-presets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.panel-presets > label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.preset-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.preset-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.preset-btn:hover {
+  background: rgba(30, 215, 96, 0.2);
+  border-color: rgba(30, 215, 96, 0.5);
+  transform: translateY(-1px);
+}
+
+.preset-btn:active {
+  transform: translateY(0);
+  background: rgba(30, 215, 96, 0.35);
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Barra Lateral Config",
+  "description": "Una barra lateral dinámica con fondo tipo cristal esmerilado. Personaliza su transparencia, desenfoque, color y más con un panel muy sencillo qwq.",
+  "main": "dist/barra-lateral-config.js",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "Ati08",
+      "url": "https://github.com/Ati08"
+    }
+  ],
+  "preview": "preview.png",
+  "branch": "main"
+}
