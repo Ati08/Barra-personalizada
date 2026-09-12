@@ -13,9 +13,9 @@ Una extensión que convierte tu barra lateral izquierda en un panel dinámico co
   - Ancho de la barra
   - Color de fondo
 -  **Presets rápidos**: Oscuro, Cristal, Neón y Sutil.
-- 💾 **La configuración se guarda automáticamente** en tu equipo.
+-  **La configuración se guarda automáticamente** en tu equipo.
 
-## 📸 Vista Previa
+##  Vista Previa
 
 ![Vista previa de Barra Lateral Config](preview.png)
 
