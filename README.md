@@ -2,19 +2,18 @@
 
 Una extensión que convierte tu barra lateral izquierda en un panel dinámico con efecto de cristal esmerilado.
 
-## ✨ Características
+##  Características
 
-- 🎨 **Oculta la barra lateral** y la muestra al pasar el mouse por el borde izquierdo.
-- 💎 **Fondo con efecto cristal esmerilado** (blur + saturación personalizables).
-- 🎛️ **Panel de configuración integrado** para ajustar en tiempo real:
+-  **Oculta la barra lateral** y la muestra al pasar el mouse por el borde izquierdo.
+-  **Fondo con efecto cristal esmerilado** (blur + saturación personalizables).
+-  **Panel de configuración integrado** para ajustar en tiempo real:
   - Transparencia
   - Desenfoque (Blur)
   - Saturación
   - Ancho de la barra
   - Color de fondo
-- 🌈 **Presets rápidos**: Oscuro, Cristal, Neón y Sutil.
+-  **Presets rápidos**: Oscuro, Cristal, Neón y Sutil.
 - 💾 **La configuración se guarda automáticamente** en tu equipo.
-- ⚡ **Animaciones optimizadas** con GPU para una experiencia fluida.
 
 ## 📸 Vista Previa
 
