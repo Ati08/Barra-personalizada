@@ -14,7 +14,7 @@
 /coverage
 
 # build files
-/dist
+# /dist
 
 # production
 /build
